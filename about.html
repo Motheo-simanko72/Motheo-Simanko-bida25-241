@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Monties Boutique</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Barlow', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: black;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid gold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    /* HERO BACKGROUND WITH FADE */
+    .about-bg {
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                  url('image/about-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .about-content h1 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .about-content p {
+      font-size: 18px;
+      color: gold;
+    }
+
+    /* BUTTON */
+    .about-content button {
+      background: gold;
+      border: none;
+      padding: 10px 20px;
+      color: black;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .about-content button:hover {
+      background: white;
+    }
+
+    /* INFO SECTION */
+    .info {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* TEAM SECTION */
+    .team {
+      background: #f2f2f2;
+      color: black;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      width: 220px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .member img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* FOOTER */
+    footer {
+      background: black;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="collection.html">Collection</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="about-bg">
+  <div class="about-content">
+    <h1>About Monties Boutique</h1>
+    <p>Stay Ahead. Dress Louder. Made to flex.</p>
+    <button onclick="location.href='collection.html'">Explore Collection</button>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="info">
+  <p>
+    Monties Boutique is a streetwear brand based in Gaborone, Botswana.
+    We create bold and modern fashion for young people who want to stand out.
+  </p>
+
+  <p>
+    Inspired by real street culture and everyday style, our clothing reflects confidence,
+    creativity, and identity.
+  </p>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <h2>Our Team</h2>
+
+  <div class="team-container">
+
+    <div class="member">
+      <img src="image/montyteddy.jpeg" alt="Founder">
+      <h4>CEO</h4>
+    </div>
+
+    <div class="member">
+      <img src="image/boikanyo-marope.jpeg" alt="Designer">
+      <h4>Designer</h4>
+    </div>
+
+    <div class="member">
+      <img src="image/promise-kgari.jpeg" alt="Marketing">
+      <h4>Marketing</h4>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Monties Boutique. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
